@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__top">
+            <div class="screen-top">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="screen-button">
+                <button class="screen-button__edit">edit</button>
+                <button class="screen-button__style">style</button>
+            </div>
+            <div class="screen-bottom">
+                <div class="screen-bottom__hide"></div>
+                <div class="screen-bottom__text">
+                    <textarea class="screen-bottom__text--textarea" cols="30" rows="10">
+                    </textarea>
+                    <button class="screen-bottom__text--add">add</button>
+                    <button class="screen-bottom__text--save">save</button>
+                </div>
+                <div class="screen-bottom__style">
+                    <div class="screen-bottom__style--fontSize">
+                        <p>Font Size:</p>
+                        <form class="f1">
+                            <input class="input" name="input" id="12px" value="12" type="radio">
+                            <label for="12px">12px</label>
+                            <input class="input" name="input" id="14px" value="14" type="radio">
+                            <label for="14px">14px</label>
+                            <input class="input" name="input" id="16px" value="16" type="radio" checked>
+                            <label for="16px">16px</label>
+                            <input class="input" name="input" id="18px" value="18" type="radio">
+                            <label for="18px">18px</label>
+                            <input class="input" name="input" id="20px" value="20" type="radio">
+                            <label for="20px">20px</label>
+                        </form>
+                    </div>
+                    <div class="screen-bottom__style--fontFamilly">
+                        <p>Font Familly:</p>
+                        <select class="select">
+                            <option selected>Choose option</option>
+                            <option value="cursive">cursive</option>
+                            <option value="fantasy">fantasy</option>
+                            <option value="monospace">monospace</option>
+                            <option value="senf-serif">senf-serif</option>
+                        </select>
+                    </div>
+                    <div class="screen-bottom__style--color">
+                        <p>Colors:</p>
+                        <div class="flexButtonColor">
+                            <button class="colorText">Color of Text</button>
+                            <button class="backgroundColor">Background color</button>
+                        </div>
+                        <div class="color-container">
+                            <div class="color1" value="red"></div>
+                            <div class="color2" value="blue"></div>
+                            <div class="color3" value="green"></div>
+                            <div class="color4" value="black"></div>
+                            <div class="color5" value="peru"></div>
+                            <div class="color6" value="hotpink"></div>
+                            <div class="color7" value="white"></div>
+                            <div class="color8" value="blueviolet"></div>
+                            <div class="color9" value="cadetblue"></div>
+                        </div>
+                        <div class="color-container2">
+                            <div class="color1" value="red"></div>
+                            <div class="color2" value="blue"></div>
+                            <div class="color3" value="green"></div>
+                            <div class="color4" value="black"></div>
+                            <div class="color5" value="peru"></div>
+                            <div class="color6" value="hotpink"></div>
+                            <div class="color7" value="white"></div>
+                            <div class="color8" value="blueviolet"></div>
+                            <div class="color9" value="cadetblue"></div>
+                        </div>
+                    </div>
+                    <div class="screen-bottom__style--textDicoration">
+                        <p>Style:</p>
+                        <form class="f2">
+                            <input class="checkbox" value="bold" type="checkbox">Bold text
+                            <input class="checkbox" value="cursive" type="checkbox">Cursive text
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container__main">
+            <div class="chosee">
+                <h2>Chosee what you want:</h2>
+                <input type="radio" name="a" id="table">
+                <label for="table">table</label>
+                <input type="radio" name="a" id="list">
+                <label for="list">list</label>
+            </div>
+            <div class="screen__table">
+                <div>
+                    <h2>Chosee what you want:</h2>
+                    <input type="radio" name="b" id="table1" checked>
+                    <label for="table1">table</label>
+                    <input type="radio" name="b" id="list1">
+                    <label for="list1">list</label>
+                </div>
+                <form name="tableCount">
+                    <label for="countTR">Count TR:<input type="text" class="countTR" name="countTR"
+                            id="countTR"></label><br>
+                    <label for="countTD">Count TD:<input type="text" name="countTD" class="countTD"
+                            id="countTD"></label>
+                    <h3>Add style to your table:</h3>
+                    <label for="wingthTD">Width of TD:<input type="text" id="wingthTD"></label><br>
+                    <label for="heightTD">Height of TD:<input type="text" id="heightTD"></label>
+                </form>
+                <form class="styleTable" name="styleTable">
+                    <label for="widthBorder">Width of border:<input type="text" name="widthBorder"
+                            id="widthBorder"></label>
+                    <label>Color of border:
+                        <select name="typeBorder" class="typeBorder">
+                            <option value="solid">solid</option>
+                            <option value="dashed">dashed</option>
+                        </select>
+                    </label>
+                    <label>Color of border:
+                        <select name="colorBorder" class="colorBorder">
+                            <option value="black">black</option>
+                            <option value="red">red</option>
+                            <option value="blue">blue</option>
+                        </select>
+                    </label>
+                </form>
+                <button class="createTable">Create table</button>
+            </div>
+            <div class="screen__list">
+                <div>
+                    <h2>Chosee what you want:</h2>
+                    <input type="radio" name="c" id="table2">
+                    <label for="table2">table</label>
+                    <input type="radio" name="c" id="list2" checked>
+                    <label for="list2">list</label>
+                </div>
+                <label for="countLi">Count Li:<input type="text" id="countLi"></label><br>
+                <label>Type of marks:
+                    <select class="typeMarks">
+                        <option value="circle">circle</option>
+                        <option value="disc">disc</option>
+                        <option value="square">square</option>
+                    </select>
+                </label><br>
+                <button class="createList">Create list</button>
+            </div>
+        </div>
+    </div>
+    <div class="emptyTable"></div>
+    <div class="emptyList"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>

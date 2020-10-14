@@ -1,0 +1,407 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen-top {
+    overflow-y: auto;
+    line-height: 2;
+    margin-top: 40px;
+    padding: 20px;
+    height: 300px;
+    width: 800px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.screen-button {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen-button__edit {
+    height: 30px;
+    width: 50px;
+    margin-right: 20px;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    outline-style: none;
+    background-color: yellow;
+}
+
+.screen-button__edit:active {
+    box-shadow: 0 0 2px 2px yellow;
+}
+
+.screen-button__style {
+    height: 30px;
+    width: 50px;
+    border: 1px solid teal;
+    border-radius: 5px;
+    outline-style: none;
+    background-color: teal;
+    color: white;
+}
+
+.screen-button__style:active {
+    box-shadow: 0 0 2px 2px teal;
+}
+
+.screen-bottom__hide {
+    height: 300px;
+    width: 800px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.screen-bottom__text {
+    display: none;
+    height: 300px;
+    width: 800px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.screen-bottom__text--textarea {
+    margin: 10px 50px;
+    width: 700px;
+    height: 200px;
+    outline-style: none;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.screen-bottom__text--textarea:focus {
+    border: 2px solid lightblue;
+    box-shadow: 0 0 3px 3px lightblue;
+}
+
+.screen-bottom__text--add {
+    margin-left: 50px;
+    height: 30px;
+    width: 50px;
+    border: 1px solid red;
+    border-radius: 5px;
+    outline-style: none;
+    background-color: red;
+    color: white;
+}
+
+.screen-bottom__text--add:active {
+    box-shadow: 0 0 2px 2px red;
+}
+
+.screen-bottom__text--save {
+    height: 30px;
+    width: 50px;
+    border: 1px solid green;
+    border-radius: 5px;
+    outline-style: none;
+    background-color: green;
+    color: white;
+}
+
+.screen-bottom__text--save:active {
+    box-shadow: 0 0 2px 2px green;
+}
+
+.screen-bottom__style {
+    display: none;
+    height: 300px;
+    width: 800px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.screen-bottom__style {
+    padding: 20px;
+}
+
+.screen-bottom__style--fontSize p {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.screen-bottom__style--fontSize .input {
+    margin-left: 10px;
+}
+
+.screen-bottom__style--fontFamilly p {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.select {
+    margin-left: 10px;
+}
+
+.screen-bottom__style--color {
+    position: relative;
+}
+
+.screen-bottom__style--color p {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.colorText {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 35px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.colorText:focus {
+    outline: none;
+    box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.backgroundColor {
+    height: 35px;
+    width: 140px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.backgroundColor:focus {
+    outline: none;
+    box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.flexButtonColor {
+    display: flex;
+}
+
+.screen-bottom__style--textDicoration p {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.checkbox {
+    margin-left: 10px;
+}
+
+.color-container, .color-container2 {
+    height: 210px;
+    width: 210px;
+    position: absolute;
+    margin-top: -160px;
+    margin-left: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    visibility: hidden;
+}
+
+.color1, .color2, .color3, .color4, .color5, .color6, .color7, .color8, .color9 {
+    height: 70px;
+    width: 70px;
+}
+
+.color1 {
+    background-color: red;
+}
+
+.color2 {
+    background-color: blue;
+}
+
+.color3 {
+    background-color: green;
+}
+
+.color4 {
+    background-color: black;
+}
+
+.color5 {
+    background-color: peru;
+}
+
+.color6 {
+    background-color: hotpink;
+}
+
+.color7 {
+    background-color: white;
+}
+
+.color8 {
+    background-color: blueviolet;
+}
+
+.color9 {
+    background-color: cadetblue;
+}
+
+.screen__table {
+    display: none;
+    line-height: 2;
+    margin-top: 40px;
+    padding: 20px;
+    height: 400px;
+    width: 700px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container__main {
+    display: none;
+}
+
+.chosee {
+    line-height: 2;
+    margin-top: 40px;
+    padding: 20px;
+    height: 250px;
+    width: 700px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.screen__list {
+    line-height: 2;
+    margin-top: 40px;
+    padding: 20px;
+    height: 250px;
+    width: 700px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.emptyTable {
+    opacity: 0;
+}
+
+.emptyList {
+    opacity: 0;
+}
+
+#countTR {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-left: 78px;
+    width: 400px;
+    height: 25px;
+}
+
+#countTD {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-left: 76px;
+    width: 400px;
+    height: 25px;
+}
+
+#wingthTD {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-left: 65px;
+    width: 400px;
+    height: 25px;
+}
+
+#heightTD {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-left: 60px;
+    width: 400px;
+    height: 25px;
+}
+
+#widthBorder {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-left: 45px;
+    width: 80px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+#countTR:focus, #countTD:focus, #wingthTD:focus, #heightTD:focus, #widthBorder:focus, #countLi:focus {
+    outline: none;
+    box-shadow: 0 0 3px 3px lightblue;
+}
+
+.createTable, .createList {
+    margin-top: 40px;
+    background-color: green;
+    color: white;
+    outline: none;
+    border: 1px solid green;
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+}
+
+.createTable:active, .createList:active {
+    outline: none;
+    border: none;
+    box-shadow: 0 0 3px 3px green;
+}
+
+.typeBorder {
+    margin-right: 10px;
+    width: 100px;
+    height: 25px;
+}
+
+#countLi {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-left: 65px;
+    width: 400px;
+    height: 25px;
+}
+
+.typeBorder {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: 80px;
+    margin-left: 10px;
+    height: 25px;
+}
+
+.colorBorder {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: 80px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.typeMarks {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-left: 25px;
+    width: 400px;
+    height: 25px;
+}
